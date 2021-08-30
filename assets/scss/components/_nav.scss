@@ -1,0 +1,54 @@
+nav {
+	padding-top: 7rem;
+	padding-bottom: 1rem;
+
+	div {
+		a {
+			display: block;
+			text-align: center;
+		}
+
+		ul {
+			display: flex;
+			flex-direction: column;
+			margin-right: 1rem;
+			padding-top: 1rem;
+			@media only screen and (min-width: 768px) {
+				flex-direction: row;
+			}
+			li {
+				text-transform: uppercase;
+
+				&:after {
+					content: '';
+					display: block;
+					margin: auto;
+					height: 3px;
+					width: 0px;
+					background: transparent;
+					transition: width 0.8s ease, background-color 0.8s ease;
+				}
+
+				&:hover:after {
+					width: 100%;
+					background: $secundaryColor;
+				}
+
+				a {
+					color: white;
+					text-decoration: none;
+					font-size: 2.2rem;
+					font-size: $fontPrimary;
+					&:hover {
+						color: whitesmoke;
+					}
+				}
+			}
+		}
+	}
+
+	.nav__logo {
+		width: 10rem;
+		margin-top: -5rem;
+	}
+}

@@ -1,0 +1,34 @@
+@import './commons';
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+.bgPrimary {
+	background-color: $primaryColor;
+}
+
+.bgSecundary {
+	background-color: $secundaryColor;
+}
+
+.colorPrimary {
+	color: $primaryColor;
+}
+
+.colorSecundary {
+	color: $secundaryColor;
+}
+
+.colorTertiary {
+	color: $tertiaryColor;
+}
+
+.bgTertiary {
+	background-color: $tertiaryColor;
+}

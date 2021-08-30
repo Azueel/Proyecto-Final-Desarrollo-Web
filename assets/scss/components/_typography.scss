@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600;800&family=Open+Sans:ital,wght@0,400;1,300&display=swap');
+
+$fontPrimary: 'Nunito', sans-serif;
+$fontSecundary: 'Open Sans', sans-serif;
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: $fontPrimary;
+}
+
+p {
+	font-family: $fontSecundary;
+}
+
+h1 {
+	font-size: 6rem;
+}

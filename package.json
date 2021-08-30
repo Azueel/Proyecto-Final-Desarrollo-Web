@@ -1,0 +1,19 @@
+{
+	"name": "proyecto-final-coderhouse",
+	"version": "1.0.0",
+	"description": "final",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build-css": "node-sass --include-path scss assets/scss/main.scss assets/css/main.css",
+		"watch-css": "nodemon -e scss -x \"npm   run build-css\"",
+		"build-bt": "node-sass --include-path scss assets/bootstrap/scss/bootstrap.scss assets/css/bootstrap.css",
+		"watch-bt": "nodemon -e scss -x \"npm run build-bt\""
+	},
+	"author": "Alejo Calandra",
+	"license": "ISC",
+	"devDependencies": {
+		"node-sass": "^6.0.1",
+		"nodemon": "^2.0.12"
+	}
+}

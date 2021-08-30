@@ -1,0 +1,194 @@
+/**********HEADER***********/
+
+.header__container {
+	margin-top: 13rem;
+
+	.header__borde {
+		height: 45vh;
+		border: solid 5px $secundaryColor;
+		border-radius: 2rem;
+	}
+}
+
+.line {
+	border: solid 3px $secundaryColor;
+}
+
+/*************SECTION************/
+.section__padding {
+	padding: 11rem 5rem;
+
+	.section__imgDirectora {
+		width: 100%;
+
+		@media only screen and (min-width: 768px) {
+			width: 90%;
+		}
+		@media only screen and (min-width: 1200px) {
+			width: 22vw;
+		}
+	}
+
+	.section__name--directora {
+		width: 100vw;
+		padding-top: 2rem;
+
+		@media only screen and (min-width: 1200px) {
+			margin-left: 4rem;
+		}
+	}
+
+	.section__margin {
+		margin-left: 10rem;
+	}
+
+	.section__border {
+		border: solid 7px $secundaryColor;
+	}
+
+	.section__info {
+		font-size: 1.6rem;
+		padding: 2rem 1rem;
+		line-height: 2.2rem;
+		margin-top: 3rem;
+
+		@media only screen and (min-width: 768px) {
+			font-size: 2.2rem;
+			line-height: 1.6;
+		}
+
+		@media only screen and (min-width: 1200px) {
+			margin-left: 4rem;
+		}
+	}
+}
+
+.section__container {
+	padding-top: 10rem;
+}
+
+/***************Cursos****************/
+
+.cursos__title {
+	font-size: 4rem;
+}
+
+.cursos__icon {
+	font-size: 8rem;
+}
+
+.cursos__title-icon {
+	font-size: 2rem;
+}
+
+.cursos__coalix {
+	margin-left: 2rem;
+	width: 18rem;
+	height: 6rem;
+}
+
+.cursos__container-button {
+	text-align: center;
+	margin-top: 5rem;
+	padding-bottom: 5rem;
+	.cursos__button {
+		color: $secundaryColor;
+		border: solid 2px black;
+		border-radius: 2rem;
+		width: 70%;
+		font-size: 3rem;
+		height: 15vh;
+	}
+}
+
+/************* Producto **************/
+@media only screen and (min-width: 360px) {
+	.imgProducto {
+		background-image: url(../img/Barberia.png);
+		background-size: cover;
+		background-position: center;
+		height: 85vh;
+		width: 100%;
+	}
+	.productoPosition {
+		color: white;
+		width: 90%;
+		margin-left: 2rem;
+		padding-top: 24rem;
+	}
+
+	.tituloProducto {
+		font-weight: bold;
+		line-height: 2.5rem;
+		font-size: 2rem;
+		background-color: rgba(0, 0, 0, 0.8);
+		padding: 2rem;
+	}
+
+	.buttonMove {
+		text-align: center;
+		margin-top: 15rem;
+	}
+	.buttonProducto {
+		color: white;
+		background-color: #ba8b02;
+		width: 70vw;
+		height: 10vh;
+		margin: 1rem 2rem;
+		border-radius: 1rem;
+		font-size: 3rem;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.productoPosition {
+		color: white;
+		margin-left: 5rem;
+		padding-top: 24rem;
+	}
+
+	.tituloProducto {
+		font-weight: bold;
+		line-height: 6rem;
+		font-size: 4.5rem;
+	}
+
+	.buttonMove {
+		margin-top: 20rem;
+	}
+
+	.buttonProducto {
+		color: white;
+		background-color: #ba8b02;
+		width: 50rem;
+		height: 12.5rem;
+		margin: 1rem 2rem;
+		border-radius: 1rem;
+		font-size: 3rem;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.imgProducto {
+		height: 100vh;
+	}
+
+	.productoPosition {
+		width: 80%;
+		margin: auto;
+	}
+
+	.tituloProducto {
+		line-height: 10rem;
+		font-size: 8rem;
+	}
+
+	.buttonMove {
+		text-align: end;
+		margin-top: 25rem;
+	}
+}
+
+.producto__container {
+	margin: 20rem 0;
+}
