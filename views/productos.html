@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="stylesheet" href="/assets/css/main.css" />
+		<link rel="stylesheet" href="/assets/css/bootstrap.css" />
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+			integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+			crossorigin="anonymous"
+		/>
+		<title>Sinergia Academia</title>
+	</head>
+
+	<body class="bgProducto">
+		<nav class="bgPrimary">
+			<div class="align-items-center">
+				<a href="/index.html" class="mx-auto"
+					><img
+						src="../assets/img/logo.png"
+						alt="logo"
+						class="nav__logo"
+				/></a>
+
+				<div class="container">
+					<ul class="justify-content-evenly text-decoration-none">
+						<li>
+							<a href="/views/cursos.html">Cursos</a>
+						</li>
+						<li>
+							<a href="/views/productos.html">Productos </a>
+						</li>
+						<li>
+							<a href="/views/nosotros.html">Nosotros</a>
+						</li>
+						<li>
+							<a href="/views/contacto.html">Contacto</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<main>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-3 py-5">
+						<h2 class="fw-bold text-center py-3 fs-1">
+							Filtrar Resultados
+						</h2>
+
+						<h4 class="fw-bold fs-2">CATEGORIAS</h4>
+						<div
+							class="
+								border-bottom border-warning border-3
+								w-75
+								pt-1
+							"
+						></div>
+						<div class="productos__checkbox py-3">
+							<label
+								><input type="checkbox" />
+								Maquinas
+							</label>
+
+							<label
+								><input type="checkbox" />
+								Patilleras
+							</label>
+
+							<label
+								><input type="checkbox" />
+								secadores
+							</label>
+
+							<label
+								><input type="checkbox" />
+								Planchitas
+							</label>
+							<label
+								><input type="checkbox" />
+								tijeras
+							</label>
+							<label
+								><input type="checkbox" />
+								peines
+							</label>
+							<label
+								><input type="checkbox" />
+								cepillos
+							</label>
+							<label
+								><input type="checkbox" />
+								navajas
+							</label>
+							<label
+								><input type="checkbox" />
+								tinturas
+							</label>
+							<label
+								><input type="checkbox" />
+								bandas
+							</label>
+							<label
+								><input type="checkbox" />
+								geles
+							</label>
+							<label
+								><input type="checkbox" />
+								ceras
+							</label>
+							<label
+								><input type="checkbox" />
+								oxidantes
+							</label>
+							<label
+								><input type="checkbox" />
+								Decolarante
+							</label>
+							<label
+								><input type="checkbox" />
+								Aluminio
+							</label>
+							<label
+								><input type="checkbox" />
+								bucleras
+							</label>
+
+							<h4 class="fw-bold pt-5 fs-2">Marca</h4>
+							<div
+								class="
+									border-bottom border-warning border-3
+									w-75
+									pt-2
+								"
+							></div>
+
+							<label class="pt-2"
+								><input type="checkbox" />
+								wahl
+							</label>
+
+							<label
+								><input type="checkbox" />
+								kemei
+							</label>
+
+							<label
+								><input type="checkbox" />
+								duga
+							</label>
+
+							<label
+								><input type="checkbox" />
+								vanta
+							</label>
+							<label
+								><input type="checkbox" />
+								b-Way
+							</label>
+							<label
+								><input type="checkbox" />
+								babyliss
+							</label>
+							<label
+								><input type="checkbox" />
+								kieper
+							</label>
+							<label
+								><input type="checkbox" />
+								dayo
+							</label>
+							<label
+								><input type="checkbox" />
+								suzika
+							</label>
+							<label
+								><input type="checkbox" />
+								progemei
+							</label>
+							<label
+								><input type="checkbox" />
+								vs-sasson
+							</label>
+							<label
+								><input type="checkbox" />
+								mundial
+							</label>
+							<label
+								><input type="checkbox" />
+								EuroStyle
+							</label>
+							<label
+								><input type="checkbox" />
+								Dovo
+							</label>
+							<label
+								><input type="checkbox" />
+								Salon-in
+							</label>
+							<label
+								><input type="checkbox" />
+								Docta
+							</label>
+						</div>
+
+						<div class="py-2">
+							<input
+								type="text"
+								class="w-50 producto__button--input p-3"
+							/>
+						</div>
+						<button class="d-flex btn btn-warning w-50 fs-2">
+							Buscar
+						</button>
+					</div>
+
+					<div class="col-lg-8">
+						<h1 class="py-5 fs-1 fw-bold">Busqueda:</h1>
+						<div class="d-flex">
+							<p class="fs-3">Ordernar Por</p>
+							<select name="select" class="ms-3 p-1 fs-3">
+								<option value="value1">
+									Precio mas Bajo a más alto
+								</option>
+								<option value="value2" selected>
+									Precio mas alto a más bajo
+								</option>
+								<option value="value3">Mayor Descuento</option>
+								<option value="value4">lo mas vendido</option>
+								<option value="value5" selected>
+									alfabeticamente
+								</option>
+								<option value="value6">combos</option>
+							</select>
+						</div>
+                        <div class="displayProducto">
+                            <div class="containerProducto border border-5 border-dark">
+                                <img
+                                    class="imgProductos "
+                                    src="../assets/img/wahlSenior.jpg"
+                                    alt="Maquina Senior"
+                                />
+                                <p class="infoProducto fs-3">
+                                    Wahl 5 Star Senior Cordless 8504-400 negra 220V
+                                </p>
+            
+                                <p class="precioProducto">$27500</p>
+                                
+                                <div class="d-flex justify-content-center rounded">
+                                   <button class="btn btn-warning w-75  fs-3">Comprar</button>                              
+                                </div>
+                                
+                            </div>
+            
+                            <div class="containerProducto border border-5 border-dark">
+                                <img
+                                    class="imgProductos "
+                                    src="../assets/img/wahlMagiClip.jpg"
+                                    alt="Maquina Magicclip"
+                                />
+                                <p class="infoProducto fs-3">
+                                    Wahl 5 Star Magic Clip Cordless 8148 roja 220V
+                                </p>
+                                <p class="precioProducto">$17900</p>
+
+                                <div class="d-flex justify-content-center rounded">
+                                   <button class="btn btn-warning w-75  fs-3">Comprar</button>                              
+                                </div>
+                            </div>
+            
+                            <div class="containerProducto border border-5 border-dark  border border-5 border-dark">
+                                <img
+                                    class="imgProductos "
+                                    src="../assets/img/wahlLegends.webp"
+                                    alt="Maquina Legend"
+                                />
+                                <p class="infoProducto fs-3">
+                                    Wahl 5 Star Legend 8147 plateada y roja 220V
+                                </p>
+                                <p class="precioProducto">$16900</p>
+
+                                <div class="d-flex justify-content-center rounded">
+                                   <button class="btn btn-warning w-75  fs-3">Comprar</button>                              
+                                </div>
+                            </div>
+            
+                            <div class="containerProducto border border-5 border-dark">
+                                <img
+                                    class="imgProductos "
+                                    src="../assets/img/wahlSuperTaper.jpg"
+                                    alt="SuperTaper"
+                                />
+                                <p class="infoProducto fs-3">Wahl Professional Super Taper blanca 220V</p>
+                                <p class="precioProducto">$11900</p>
+
+                                <div class="d-flex justify-content-center rounded">
+                                   <button class="btn btn-warning w-75  fs-3">Comprar</button>                              
+                                </div>
+                            </div>
+            
+                            <div class="containerProducto border border-5 border-dark">
+                                <img
+                                    class="imgProductos "
+                                    src="../assets/img/vanta.jpg"
+                                    alt="Maquina Vanta"
+                                />
+                                <p class="infoProducto fs-3">
+                                    Vanta Premium Label Professional plateada 220V
+                                </p>
+                                <p class="precioProducto">$10500</p>
+
+                                <div class="d-flex justify-content-center rounded">
+                                   <button class="btn btn-warning w-75  fs-3">Comprar</button>                              
+                                </div>
+                            </div>
+            
+                            <div class="containerProducto border border-5 border-dark">
+                                <img
+                                    class="imgProductos "
+                                    src="../assets/img/kemeiBordo.webp"
+                                    alt="kemei Bordo"
+                                />
+                                <p class="infoProducto fs-3">Cortadora Kemei KM-2600 bordó 220V</p>
+                                <p class="precioProducto">$7200</p>
+
+                                <div class="d-flex justify-content-center rounded">
+                                   <button class="btn btn-warning w-75  fs-3">Comprar</button>                              
+                                </div>
+                            </div>
+            
+                            <div class="containerProducto border border-5 border-dark">
+                                <img class="imgProductos " src="../assets/img/duga.jpg" alt="" />
+                                <p class="infoProducto fs-3">
+                                    Maquina De Corte Corta Pelo Duga Profesional Barber D405
+                                </p>
+                                <p class="precioProducto">$5300</p>
+
+                                <div class="d-flex justify-content-center rounded">
+                                   <button class="btn btn-warning w-75  fs-3">Comprar</button>                              
+                                </div>
+                            </div>
+            
+                            <div class="containerProducto border border-5 border-dark">
+                                <img
+                                    class="imgProductos "
+                                    src="../assets/img/D_NQ_NP_843729-MLA44171062230_112020-O.webp"
+                                    alt="teknipro"
+                                />
+                                <p class="infoProducto fs-3">
+                                    Máquina De Cortar Pelo Majestic Clipper Teknikpro
+                                </p>
+                                <p class="precioProducto">$10200</p>
+
+                                <div class="d-flex justify-content-center rounded">
+                                   <button class="btn btn-warning w-75  fs-3">Comprar</button>                              
+                                </div>
+                            </div>
+                        </div>
+            
+                        
+            
+                        <div class="displayProducto">
+                            <div class="containerProducto border border-5 border-dark">
+                                <img
+                                    class="imgProductos "
+                                    src="../assets/img/babylissFx.jpg"
+                                    alt="babylissFx"
+                                />
+                                <p class="infoProducto fs-3">
+                                    Trimmer Patillera Fade Gold Fx Babyliss Pro Cuchilla T
+                                </p>
+                                <p class="precioProducto">$20500</p>
+
+                                <div class="d-flex justify-content-center rounded">
+                                   <button class="btn btn-warning w-75  fs-3">Comprar</button>                              
+                                </div>
+                            </div>
+            
+                            <div class="containerProducto border border-5 border-dark">
+                                <img
+                                    class="imgProductos "
+                                    src="../assets/img/detailer.jpg"
+                                    alt="detailer"
+                                />
+                                <p class="infoProducto fs-3">
+                                    Wahl 5 Star Cordless Detailer Li plata y roja 110V/220V
+                                </p>
+                                <p class="precioProducto">$19900</p>
+
+                                <div class="d-flex justify-content-center rounded">
+                                   <button class="btn btn-warning w-75  fs-3">Comprar</button>                              
+                                </div>
+                            </div>
+            
+                            <div class="containerProducto border border-5 border-dark">
+                                <img class="imgProductos " src="../assets/img/1971.jpg" alt="1971" />
+                                <p class="infoProducto fs-3">Trimmer Kemei KM-1971 100V/240V</p>
+                                <p class="precioProducto">$9900</p>
+
+                                <div class="d-flex justify-content-center rounded">
+                                   <button class="btn btn-warning w-75  fs-3">Comprar</button>                              
+                                </div>
+                            </div>
+            
+                            <div class="containerProducto border border-5 border-dark">
+                                <img
+                                    class="imgProductos "
+                                    src="../assets/img/70years.webp"
+                                    alt="70years"
+                                />
+                                <p class="infoProducto fs-3">Trimmer Kemei KM-1949 plateada 110V/240V</p>
+                                <p class="precioProducto">$9900</p>
+
+                                <div class="d-flex justify-content-center rounded">
+                                   <button class="btn btn-warning w-75  fs-3">Comprar</button>                              
+                                </div>
+                            </div>
+            
+                            <div class="containerProducto border border-5 border-dark">
+                                <img
+                                    class="imgProductos "
+                                    src="../assets/img/kemeidetailer.jpg"
+                                    alt="kemeiDetailer"
+                                />
+                                <p class="infoProducto fs-3">Kemei KM-9163 plateada 110V/220V</p>
+                                <p class="precioProducto">$7900</p>
+
+                                <div class="d-flex justify-content-center rounded">
+                                   <button class="btn btn-warning w-75  fs-3">Comprar</button>                              
+                                </div>
+                            </div>
+            
+                            <div class="containerProducto border border-5 border-dark">
+                                <img class="imgProductos " src="../assets/img/1974b.jpg" alt="1974b" />
+                                <p class="infoProducto fs-3">
+                                    Trimmer Kemei KM-1974A Buda dorada 110V/240V
+                                </p>
+                                <p class="precioProducto">$7400</p>
+
+                                <div class="d-flex justify-content-center rounded">
+                                   <button class="btn btn-warning w-75  fs-3">Comprar</button>                              
+                                </div>
+                            </div>
+            
+                            <div class="containerProducto border border-5 border-dark">
+                                <img
+                                    class="imgProductos "
+                                    src="../assets/img/dugapatillera.jpg"
+                                    alt="dugapatillera"
+                                />
+                                <p class="infoProducto fs-3">
+                                    Maquina Para Corte Pelo Barbería Peluquería D406
+                                </p>
+                                <p class="precioProducto">$5300</p>
+
+                                <div class="d-flex justify-content-center rounded">
+                                   <button class="btn btn-warning w-75  fs-3">Comprar</button>                              
+                                </div>
+                            </div>
+            
+                            <div class="containerProducto border border-5 border-dark">
+                                <img
+                                    class="imgProductos "
+                                    src="../assets/img/triumph.webp"
+                                    alt="euroStyle Triumph"
+                                />
+                                <p class="infoProducto fs-3">
+                                    Maquina Corta Pelo Patillera Profesional Eurostil Triumph
+                                </p>
+                                <p class="precioProducto">$4900</p>
+
+                                <div class="d-flex justify-content-center rounded">
+                                   <button class="btn btn-warning w-75  fs-3">Comprar</button>                              
+                                </div>
+                            </div>
+                        </div>
+            
+                        
+                        <div class="displayProducto">
+                            <div class="containerProducto border border-5 border-dark">
+                                <img class="imgProductos " src="../assets/img/kiepe.jpg" alt="kiepe" />
+                                <p class="infoProducto fs-3">
+                                    Tijera Para Peluquería Kiepe Laser Microdentada 6.5
+                                </p>
+                                <p class="precioProducto">$4900</p>
+
+                                <div class="d-flex justify-content-center rounded">
+                                   <button class="btn btn-warning w-75  fs-3">Comprar</button>                              
+                                </div>
+                            </div>
+            
+                            <div class="containerProducto border border-5 border-dark">
+                                <img
+                                    class="imgProductos "
+                                    src="../assets/img/tijeraVanta.jpg"
+                                    alt="vanta"
+                                />
+                                <p class="infoProducto fs-3">
+                                    Vanta Premium Tijera Corte Microdentada 5.0 Profesional
+                                </p>
+                                <p class="precioProducto">$3500</p>
+
+                                <div class="d-flex justify-content-center rounded">
+                                   <button class="btn btn-warning w-75  fs-3">Comprar</button>                              
+                                </div>
+                            </div>
+            
+                            <div class="containerProducto border border-5 border-dark">
+                                <img
+                                    class="imgProductos "
+                                    src="../assets/img/dayoMicrodentada.jpg"
+                                    alt="dayo"
+                                />
+                                <p class="infoProducto fs-3">
+                                    Tijera Microdentada Dayo Blue Titanium 5,5 Peluquería W1755
+                                </p>
+                                <p class="precioProducto">$3200</p>
+
+                                <div class="d-flex justify-content-center rounded">
+                                   <button class="btn btn-warning w-75  fs-3">Comprar</button>                              
+                                </div>
+                            </div>
+            
+                            <div class="containerProducto border border-5 border-dark">
+                                <img class="imgProductos " src="../assets/img/asho.jpg" alt="asho" />
+                                <p class="infoProducto fs-3">
+                                    Tijera Pulir Asho Profesional 5,5 Pulgadas Mango Labrado
+                                </p>
+                                <p class="precioProducto">$2500</p>
+
+                                <div class="d-flex justify-content-center rounded">
+                                   <button class="btn btn-warning w-75  fs-3">Comprar</button>                              
+                                </div>
+                            </div>
+            
+                            <div class="containerProducto border border-5 border-dark">
+                                <img class="imgProductos " src="../assets/img/dovo.jfif" alt="dovo" />
+                                <p class="infoProducto fs-3">
+                                    Tijera Dovo Solingen Acero Inoxidable 5.5 Pulgadas
+                                </p>
+                                <p class="precioProducto">$2900</p>
+
+                                <div class="d-flex justify-content-center rounded">
+                                   <button class="btn btn-warning w-75  fs-3">Comprar</button>                              
+                                </div>
+                            </div>
+            
+                            <div class="containerProducto border border-5 border-dark">
+                                <img
+                                    class="imgProductos "
+                                    src="../assets/img/dayoAnimalPrint.jpg"
+                                    alt="dayoAnimalPrint"
+                                />
+                                <p class="infoProducto fs-3">
+                                    Tijera De Corte Dayo Animal Print Filo Navaja 5,5
+                                </p>
+                                <p class="precioProducto">$2500</p>
+
+                                <div class="d-flex justify-content-center rounded">
+                                   <button class="btn btn-warning w-75  fs-3">Comprar</button>                              
+                                </div>
+                            </div>
+            
+                            <div class="containerProducto border border-5 border-dark">
+                                <img
+                                    class="imgProductos "
+                                    src="../assets/img/sasson.jpg"
+                                    alt="sasson"
+                                />
+                                <p class="infoProducto fs-3">
+                                    Tijera Profesional Vs Sassoo De Pulir Acero 6``
+                                </p>
+                                <p class="precioProducto">$2300</p>
+
+                                <div class="d-flex justify-content-center rounded">
+                                   <button class="btn btn-warning w-75  fs-3">Comprar</button>                              
+                                </div>
+                            </div>
+            
+                            <div class="containerProducto border border-5 border-dark">
+                                <img
+                                    class="imgProductos "
+                                    src="../assets/img/inicianteTijera.jpg"
+                                    alt="tijeraPricipiantes"
+                                />
+                                <p class="infoProducto fs-3">Tijera de Pulir Iniciantes</p>
+                                <p class="precioProducto">$650</p>
+
+                                <div class="d-flex justify-content-center rounded">
+                                   <button class="btn btn-warning w-75  fs-3">Comprar</button>                              
+                                </div>
+                            </div>
+                        </div>
+            
+                     
+                        <div class="displayProducto">
+                            <div class="containerProducto border border-5 border-dark">
+                                <img
+                                    class="imgProductos "
+                                    src="../assets/img/babylissPlancha.jfif"
+                                    alt="babylissPlancha"
+                                />
+                                <p class="infoProducto fs-3">
+                                    Plancha De Pelo Planchita Wet Digital Babyliss Pro
+                                </p>
+                                <p class="precioProducto">$12500</p>
+
+                                <div class="d-flex justify-content-center rounded">
+                                   <button class="btn btn-warning w-75  fs-3">Comprar</button>                              
+                                </div>
+                            </div>
+                                <div class="containerProducto border border-5 border-dark">
+                                    <img class="imgProductos " src="../assets/img/brazilianPlancha.jpg" alt="brazilianPlancha" />
+                                    <p class="infoProducto fs-3">Plancha Pelo Alisado Keratina Babyliss Brazilian 450f Local</p>
+                                    <p class="precioProducto">$12500</p>
+
+                                    <div class="d-flex justify-content-center rounded">
+                                   <button class="btn btn-warning w-75  fs-3">Comprar</button>                              
+                                </div>
+                                </div>
+            
+                                <div class="containerProducto border border-5 border-dark">
+                                    <img class="imgProductos " src="../assets/img/suzika.jpg" alt="suzika" />
+                                    <p class="infoProducto fs-3">Planchita de pelo Suzika SZ-PL049  220V - 240V</p>
+                                    <p class="precioProducto">$3900</p>
+
+                                    <div class="d-flex justify-content-center rounded">
+                                   <button class="btn btn-warning w-75  fs-3">Comprar</button>                              
+                                </div>
+                                </div>
+            
+                                <div class="containerProducto border border-5 border-dark">
+                                    <img class="imgProductos " src="../assets/img/planchaDuga.jpg" alt="planchaDuga" />
+                                    <p class="infoProducto fs-3">Planchita de pelo Duga D207 negra 220V</p>
+                                    <p class="precioProducto">$3900</p>
+
+                                    <div class="d-flex justify-content-center rounded">
+                                   <button class="btn btn-warning w-75  fs-3">Comprar</button>                              
+                                </div>
+                                </div>
+            
+                                <div class="containerProducto border border-5 border-dark">
+                                    <img class="imgProductos " src="../assets/img/vantamini.jpg" alt="vantamini" />
+                                    <p class="infoProducto fs-3">Vanta 3800 Mini Compact Secador Profesional 1800w</p>
+                                    <p class="precioProducto">$4900</p>
+
+                                    <div class="d-flex justify-content-center rounded">
+                                   <button class="btn btn-warning w-75  fs-3">Comprar</button>                              
+                                </div>
+                                </div>
+            
+                                <div class="containerProducto border border-5 border-dark">
+                                    <img class="imgProductos " src="../assets/img/teknikproBlack.jpg" alt="teknikproBlack" />
+                                    <p class="infoProducto fs-3">Secador Pelo Black And White Extreme 5000 Teknikpro</p>
+                                    <p class="precioProducto">$4500</p>
+
+                                    <div class="d-flex justify-content-center rounded">
+                                   <button class="btn btn-warning w-75  fs-3">Comprar</button>                              
+                                </div>
+                                </div>
+            
+                                <div class="containerProducto border border-5 border-dark">
+                                    <img class="imgProductos " src="../assets/img/teknipro2800.jpg" alt="teknipro2800" />
+                                    <p class="infoProducto fs-3">Secador Profesional Altro 2800 Teknikpro Con Difusor</p>
+                                    <p class="precioProducto">$3400</p>
+
+                                    <div class="d-flex justify-content-center rounded">
+                                   <button class="btn btn-warning w-75  fs-3">Comprar</button>                              
+                                </div>
+                                </div>
+            
+                                <div class="containerProducto border border-5 border-dark">
+                                    <img class="imgProductos " src="../assets/img/secadorKemei.jfif" alt="kemeiSecador" />
+                                    <p class="infoProducto fs-3">Secador De Pelo Profesional Kemei Km-3322</p>
+                                    <p class="precioProducto">$2800</p>
+                                    
+                                    <div class="d-flex justify-content-center rounded">
+                                   <button class="btn btn-warning w-75  fs-3">Comprar</button>                              
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>					
+				</div>
+			</div>
+		</main>
+
+		<footer>
+			<div class="footer__secondary py-3">
+				<p class="footer__text"></p>
+			</div>
+
+			<div class="menu">
+				<div class="footerRedes">
+					<div class="socialNetworks d-flex justify-content-center">
+						<a href="https://www.facebook.com/"
+							><i
+								class="
+									fab
+									fa-facebook-square
+									iconoSocial
+									text-warning
+									mx-5
+								"
+							></i
+						></a>
+						<a href="https://twitter.com/"
+							><i
+								class="
+									fab
+									fa-twitter
+									mx-5
+									iconoSocial
+									text-warning
+								"
+							></i
+						></a>
+						<a href="https://www.instagram.com/"
+							><i
+								class="
+									fab
+									fa-instagram
+									iconoSocial
+									text-warning
+									mx-5
+								"
+							></i
+						></a>
+						<a href="https://www.youtube.com/">
+							<i
+								class="
+									fab
+									fa-youtube
+									iconoSocial
+									text-warning
+									mx-5
+								"
+							></i>
+						</a>
+					</div>
+					<div class="footer__contactanos">
+						<p class="footer__contactanos--text">Contactanos</p>
+						<p class="footer__contactanos--number">
+							011-222-333-111
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
