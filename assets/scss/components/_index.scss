@@ -1,5 +1,5 @@
 /**********HEADER***********/
-
+@import './commons';
 .header__container {
 	margin-top: 13rem;
 
@@ -17,17 +17,6 @@
 /*************SECTION************/
 .section__padding {
 	padding: 11rem 5rem;
-
-	.section__imgDirectora {
-		width: 100%;
-
-		@media only screen and (min-width: 768px) {
-			width: 90%;
-		}
-		@media only screen and (min-width: 1200px) {
-			width: 22vw;
-		}
-	}
 
 	.section__name--directora {
 		width: 100vw;
@@ -102,93 +91,37 @@
 }
 
 /************* Producto **************/
-@media only screen and (min-width: 360px) {
-	.imgProducto {
-		background-image: url(../img/Barberia.png);
-		background-size: cover;
-		background-position: center;
-		height: 85vh;
-		width: 100%;
-	}
-	.productoPosition {
-		color: white;
-		width: 90%;
-		margin-left: 2rem;
-		padding-top: 24rem;
-	}
+.imgProducto {
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)),
+		url(../img/Barberia.png);
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
-	.tituloProducto {
-		font-weight: bold;
-		line-height: 2.5rem;
+	.producto__title {
 		font-size: 2rem;
-		background-color: rgba(0, 0, 0, 0.8);
-		padding: 2rem;
-	}
-
-	.buttonMove {
+		color: whitesmoke;
+		background-color: rgba(0, 0, 0, 0.7);
 		text-align: center;
-		margin-top: 15rem;
-	}
-	.buttonProducto {
-		color: white;
-		background-color: #ba8b02;
-		width: 70vw;
-		height: 10vh;
-		margin: 1rem 2rem;
-		border-radius: 1rem;
-		font-size: 3rem;
-	}
-}
 
-@media only screen and (min-width: 768px) {
-	.productoPosition {
-		color: white;
-		margin-left: 5rem;
-		padding-top: 24rem;
+		@media only screen and (min-width: 768px) {
+			font-size: 4rem;
+		}
+
+		@media only screen and (min-width: 1200px) {
+			font-size: 6rem;
+		}
 	}
 
-	.tituloProducto {
-		font-weight: bold;
-		line-height: 6rem;
-		font-size: 4.5rem;
-	}
+	.producto__button {
+		width: 75%;
 
-	.buttonMove {
-		margin-top: 20rem;
+		@media only screen and (min-width: 1200px) {
+			width: 50%;
+		}
 	}
-
-	.buttonProducto {
-		color: white;
-		background-color: #ba8b02;
-		width: 50rem;
-		height: 12.5rem;
-		margin: 1rem 2rem;
-		border-radius: 1rem;
-		font-size: 3rem;
-	}
-}
-
-@media only screen and (min-width: 1200px) {
-	.imgProducto {
-		height: 100vh;
-	}
-
-	.productoPosition {
-		width: 80%;
-		margin: auto;
-	}
-
-	.tituloProducto {
-		line-height: 10rem;
-		font-size: 8rem;
-	}
-
-	.buttonMove {
-		text-align: end;
-		margin-top: 25rem;
-	}
-}
-
-.producto__container {
-	margin: 20rem 0;
 }

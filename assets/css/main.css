@@ -17,23 +17,15 @@ h1 {
   margin-top: 13rem; }
   .header__container .header__borde {
     height: 45vh;
-    border: solid 5px #ffc107;
+    border: solid 5px #d7cc75;
     border-radius: 2rem; }
 
 .line {
-  border: solid 3px #ffc107; }
+  border: solid 3px #d7cc75; }
 
 /*************SECTION************/
 .section__padding {
   padding: 11rem 5rem; }
-  .section__padding .section__imgDirectora {
-    width: 100%; }
-    @media only screen and (min-width: 768px) {
-      .section__padding .section__imgDirectora {
-        width: 90%; } }
-    @media only screen and (min-width: 1200px) {
-      .section__padding .section__imgDirectora {
-        width: 22vw; } }
   .section__padding .section__name--directora {
     width: 100vw;
     padding-top: 2rem; }
@@ -43,7 +35,7 @@ h1 {
   .section__padding .section__margin {
     margin-left: 10rem; }
   .section__padding .section__border {
-    border: solid 7px #ffc107; }
+    border: solid 7px #d7cc75; }
   .section__padding .section__info {
     font-size: 1.6rem;
     padding: 2rem 1rem;
@@ -80,7 +72,7 @@ h1 {
   margin-top: 5rem;
   padding-bottom: 5rem; }
   .cursos__container-button .cursos__button {
-    color: #ffc107;
+    color: #d7cc75;
     border: solid 2px black;
     border-radius: 2rem;
     width: 70%;
@@ -88,71 +80,31 @@ h1 {
     height: 15vh; }
 
 /************* Producto **************/
-@media only screen and (min-width: 360px) {
-  .imgProducto {
-    background-image: url(../img/Barberia.png);
-    background-size: cover;
-    background-position: center;
-    height: 85vh;
-    width: 100%; }
-  .productoPosition {
-    color: white;
-    width: 90%;
-    margin-left: 2rem;
-    padding-top: 24rem; }
-  .tituloProducto {
-    font-weight: bold;
-    line-height: 2.5rem;
+.imgProducto {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url(../img/Barberia.png);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .imgProducto .producto__title {
     font-size: 2rem;
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 2rem; }
-  .buttonMove {
-    text-align: center;
-    margin-top: 15rem; }
-  .buttonProducto {
-    color: white;
-    background-color: #ba8b02;
-    width: 70vw;
-    height: 10vh;
-    margin: 1rem 2rem;
-    border-radius: 1rem;
-    font-size: 3rem; } }
-
-@media only screen and (min-width: 768px) {
-  .productoPosition {
-    color: white;
-    margin-left: 5rem;
-    padding-top: 24rem; }
-  .tituloProducto {
-    font-weight: bold;
-    line-height: 6rem;
-    font-size: 4.5rem; }
-  .buttonMove {
-    margin-top: 20rem; }
-  .buttonProducto {
-    color: white;
-    background-color: #ba8b02;
-    width: 50rem;
-    height: 12.5rem;
-    margin: 1rem 2rem;
-    border-radius: 1rem;
-    font-size: 3rem; } }
-
-@media only screen and (min-width: 1200px) {
-  .imgProducto {
-    height: 100vh; }
-  .productoPosition {
-    width: 80%;
-    margin: auto; }
-  .tituloProducto {
-    line-height: 10rem;
-    font-size: 8rem; }
-  .buttonMove {
-    text-align: end;
-    margin-top: 25rem; } }
-
-.producto__container {
-  margin: 20rem 0; }
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center; }
+    @media only screen and (min-width: 768px) {
+      .imgProducto .producto__title {
+        font-size: 4rem; } }
+    @media only screen and (min-width: 1200px) {
+      .imgProducto .producto__title {
+        font-size: 6rem; } }
+  .imgProducto .producto__button {
+    width: 75%; }
+    @media only screen and (min-width: 1200px) {
+      .imgProducto .producto__button {
+        width: 50%; } }
 
 * {
   margin: 0;
@@ -163,16 +115,16 @@ html {
   font-size: 62.5%; }
 
 .bgPrimary {
-  background-color: #212529; }
+  background-color: #36363d; }
 
 .bgSecundary {
-  background-color: #ffc107; }
+  background-color: #d7cc75; }
 
 .colorPrimary {
-  color: #212529; }
+  color: #36363d; }
 
 .colorSecundary {
-  color: #ffc107; }
+  color: #d7cc75; }
 
 .colorTertiary {
   color: whitesmoke; }
@@ -206,7 +158,7 @@ nav {
         transition: width 0.8s ease, background-color 0.8s ease; }
       nav div ul li:hover:after {
         width: 100%;
-        background: #ffc107; }
+        background: #d7cc75; }
       nav div ul li a {
         color: white;
         text-decoration: none;
@@ -219,17 +171,17 @@ nav {
     margin-top: -5rem; }
 
 footer .footer__secondary {
-  background-color: #ffc107;
+  background-color: #d7cc75;
   height: 10vh; }
   footer .footer__secondary .footer__text {
-    border-left: solid 3px #212529;
+    border-left: solid 3px #36363d;
     height: 8vh;
     margin-left: 50%; }
 
 footer .menu {
-  background-color: #212529;
+  background-color: #36363d;
   width: 100%;
-  color: #ffc107; }
+  color: #d7cc75; }
   footer .menu .footerRedes {
     text-align: center;
     display: flex;
@@ -291,6 +243,7 @@ footer .menu {
   padding: 2rem 4rem;
   border-radius: 1rem; }
 
+/*****************PRODUCTO********************/
 .productos__checkbox {
   display: flex;
   flex-direction: column;
@@ -300,107 +253,23 @@ footer .menu {
 .bgProducto {
   background-color: #efe8df; }
 
-/*****************PRODUCTO********************/
-@media only screen and (min-width: 360px) {
-  .displayProducto {
-    display: flex;
-    flex-direction: column; }
-  .containerProducto {
-    background-color: white;
-    width: 80vw;
-    height: 65vh;
-    margin: 2rem auto;
-    line-height: 6.5rem;
-    border-radius: 0.5rem; }
-  .imgProductos {
-    margin-top: 2rem;
-    width: 77vw;
-    height: 43vh; }
-  .infoProducto {
-    margin: 0 1rem;
-    line-height: 2.5rem;
-    font-weight: lighter;
-    text-align: center; }
-  .precioProducto {
-    font-weight: bold;
-    font-size: 3rem;
-    text-align: center; }
-  .containerButton {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin: -1.5rem 1rem; }
-  .buttonVenta {
-    background-image: linear-gradient(#ffb347 0%, #ffcc33 51%, #ffb347 100%); }
-  .buttonVenta {
-    text-align: center;
-    text-transform: uppercase;
-    transition: 0.5s;
-    background-size: 200% auto;
-    color: white;
-    box-shadow: 0 0 20px #eee;
-    border-radius: 10px;
-    display: block;
-    margin-left: 0.5rem;
-    width: 35vw;
-    font-size: 1.5rem;
-    text-decoration: none; }
-  .buttonVenta:hover {
-    background-position: right center;
-    /* change the direction of the change here */
-    color: #fff;
-    text-decoration: none; }
-  .buttonDetalle {
-    background-image: linear-gradient(to right, #00d2ff 0%, #3a7bd5 51%, #00d2ff 100%); }
-  .buttonDetalle {
-    text-align: center;
-    text-transform: uppercase;
-    transition: 0.5s;
-    background-size: 200% auto;
-    color: white;
-    box-shadow: 0 0 20px #eee;
-    border-radius: 10px;
-    display: block;
-    margin-left: 0.5rem;
-    font-size: 1.2rem; }
-  .buttonDetalle:hover {
-    background-position: right center;
-    /* change the direction of the change here */
-    color: #fff;
-    text-decoration: none; } }
+.productos__info {
+  font-size: 2rem; }
+
+.producto__precio {
+  font-size: 2.5rem; }
 
 @media only screen and (min-width: 768px) {
-  .displayProducto {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); }
-  .containerProducto {
-    width: 40vw;
-    height: 57vh; }
-  .imgProductos {
-    width: 38vw;
-    height: 35vh; }
-  .buttonVenta {
-    width: 18vw;
-    font-size: 1.9rem; }
-  .buttonDetalle {
-    font-size: 1.4rem; } }
+  .productos__info {
+    font-size: 2.7rem; }
+  .producto__precio {
+    font-size: 3rem; } }
 
 @media only screen and (min-width: 1200px) {
-  .displayProducto {
-    grid-template-columns: repeat(4, 1fr); }
-  .containerProducto {
-    width: 15vw;
-    height: 51vh; }
-  .imgProductos {
-    margin-top: 2rem;
-    width: 14vw;
-    height: 29vh; }
-  .buttonVenta {
-    width: 12.8rem;
-    height: 6.3rem;
-    color: whitesmoke; }
-  .buttonDetalle {
-    font-size: 1.2rem;
-    height: 6.3rem; } }
+  .productos__info {
+    font-size: 2rem; }
+  .producto__precio {
+    font-size: 3rem; } }
 
 body {
   background-color: whitesmoke; }

@@ -1,3 +1,4 @@
+/*****************PRODUCTO********************/
 .productos__checkbox {
 	display: flex;
 	flex-direction: column;
@@ -9,154 +10,29 @@
 	background-color: #efe8df;
 }
 
-/*****************PRODUCTO********************/
+.productos__info {
+	font-size: 2rem;
+}
 
-@media only screen and (min-width: 360px) {
-	.displayProducto {
-		display: flex;
-		flex-direction: column;
-	}
-
-	.containerProducto {
-		background-color: white;
-		width: 80vw;
-		height: 65vh;
-		margin: 2rem auto;
-		line-height: 6.5rem;
-		border-radius: 0.5rem;
-	}
-
-	.imgProductos {
-		margin-top: 2rem;
-		width: 77vw;
-		height: 43vh;
-	}
-
-	.infoProducto {
-		margin: 0 1rem;
-		line-height: 2.5rem;
-		font-weight: lighter;
-		text-align: center;
-	}
-
-	.precioProducto {
-		font-weight: bold;
-		font-size: 3rem;
-		text-align: center;
-	}
-
-	.containerButton {
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		margin: -1.5rem 1rem;
-	}
-
-	.buttonVenta {
-		background-image: linear-gradient(
-			#ffb347 0%,
-			#ffcc33 51%,
-			#ffb347 100%
-		);
-	}
-	.buttonVenta {
-		text-align: center;
-		text-transform: uppercase;
-		transition: 0.5s;
-		background-size: 200% auto;
-		color: white;
-		box-shadow: 0 0 20px #eee;
-		border-radius: 10px;
-		display: block;
-		margin-left: 0.5rem;
-		width: 35vw;
-		font-size: 1.5rem;
-		text-decoration: none;
-	}
-
-	.buttonVenta:hover {
-		background-position: right center; /* change the direction of the change here */
-		color: #fff;
-		text-decoration: none;
-	}
-
-	.buttonDetalle {
-		background-image: linear-gradient(
-			to right,
-			#00d2ff 0%,
-			#3a7bd5 51%,
-			#00d2ff 100%
-		);
-	}
-	.buttonDetalle {
-		text-align: center;
-		text-transform: uppercase;
-		transition: 0.5s;
-		background-size: 200% auto;
-		color: white;
-		box-shadow: 0 0 20px #eee;
-		border-radius: 10px;
-		display: block;
-		margin-left: 0.5rem;
-		font-size: 1.2rem;
-	}
-
-	.buttonDetalle:hover {
-		background-position: right center; /* change the direction of the change here */
-		color: #fff;
-		text-decoration: none;
-	}
+.producto__precio {
+	font-size: 2.5rem;
 }
 
 @media only screen and (min-width: 768px) {
-	.displayProducto {
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
+	.productos__info {
+		font-size: 2.7rem;
 	}
 
-	.containerProducto {
-		width: 40vw;
-		height: 57vh;
-	}
-
-	.imgProductos {
-		width: 38vw;
-		height: 35vh;
-	}
-
-	.buttonVenta {
-		width: 18vw;
-		font-size: 1.9rem;
-	}
-
-	.buttonDetalle {
-		font-size: 1.4rem;
+	.producto__precio {
+		font-size: 3rem;
 	}
 }
-
 @media only screen and (min-width: 1200px) {
-	.displayProducto {
-		grid-template-columns: repeat(4, 1fr);
+	.productos__info {
+		font-size: 2rem;
 	}
 
-	.containerProducto {
-		width: 15vw;
-		height: 51vh;
-	}
-
-	.imgProductos {
-		margin-top: 2rem;
-		width: 14vw;
-		height: 29vh;
-	}
-
-	.buttonVenta {
-		width: 12.8rem;
-		height: 6.3rem;
-		color: whitesmoke;
-	}
-
-	.buttonDetalle {
-		font-size: 1.2rem;
-		height: 6.3rem;
+	.producto__precio {
+		font-size: 3rem;
 	}
 }
