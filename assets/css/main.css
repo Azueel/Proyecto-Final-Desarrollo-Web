@@ -25,29 +25,15 @@ h1 {
 
 /*************SECTION************/
 .section__padding {
-  padding: 11rem 5rem; }
-  .section__padding .section__name--directora {
-    width: 100vw;
-    padding-top: 2rem; }
-    @media only screen and (min-width: 1200px) {
-      .section__padding .section__name--directora {
-        margin-left: 4rem; } }
+  padding: 11rem 5rem;
+  border: solid 6px #d7cc75; }
+  .section__padding .nosotros__title {
+    font-size: 5rem;
+    font-weight: bold; }
   .section__padding .section__margin {
     margin-left: 10rem; }
   .section__padding .section__border {
     border: solid 7px #d7cc75; }
-  .section__padding .section__info {
-    font-size: 1.6rem;
-    padding: 2rem 1rem;
-    line-height: 2.2rem;
-    margin-top: 3rem; }
-    @media only screen and (min-width: 768px) {
-      .section__padding .section__info {
-        font-size: 2.2rem;
-        line-height: 1.6; } }
-    @media only screen and (min-width: 1200px) {
-      .section__padding .section__info {
-        margin-left: 4rem; } }
 
 .section__container {
   padding-top: 10rem; }
@@ -270,6 +256,35 @@ footer .menu {
     font-size: 2rem; }
   .producto__precio {
     font-size: 3rem; } }
+
+.nosotros__font {
+  font-size: 6rem;
+  margin-bottom: 8rem; }
+
+.nosotros__name--directora {
+  width: 100vw;
+  padding-top: 2rem; }
+  @media only screen and (min-width: 1200px) {
+    .nosotros__name--directora {
+      margin-left: 4rem; } }
+
+.nosotros__info {
+  font-size: 1.6rem;
+  padding: 2rem 1rem;
+  line-height: 2.2rem;
+  margin-top: 3rem; }
+  @media only screen and (min-width: 768px) {
+    .nosotros__info {
+      font-size: 2.2rem;
+      line-height: 1.6; } }
+  @media only screen and (min-width: 1200px) {
+    .nosotros__info {
+      margin-left: 4rem; } }
+
+.nosotros__profesores {
+  font-size: 7rem;
+  font-weight: bold;
+  padding-bottom: 3rem; }
 
 body {
   background-color: whitesmoke; }

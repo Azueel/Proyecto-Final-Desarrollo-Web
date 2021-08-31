@@ -17,14 +17,11 @@
 /*************SECTION************/
 .section__padding {
 	padding: 11rem 5rem;
+	border: solid 6px $secundaryColor;
 
-	.section__name--directora {
-		width: 100vw;
-		padding-top: 2rem;
-
-		@media only screen and (min-width: 1200px) {
-			margin-left: 4rem;
-		}
+	.nosotros__title {
+		font-size: 5rem;
+		font-weight: bold;
 	}
 
 	.section__margin {
@@ -33,22 +30,6 @@
 
 	.section__border {
 		border: solid 7px $secundaryColor;
-	}
-
-	.section__info {
-		font-size: 1.6rem;
-		padding: 2rem 1rem;
-		line-height: 2.2rem;
-		margin-top: 3rem;
-
-		@media only screen and (min-width: 768px) {
-			font-size: 2.2rem;
-			line-height: 1.6;
-		}
-
-		@media only screen and (min-width: 1200px) {
-			margin-left: 4rem;
-		}
 	}
 }
 
