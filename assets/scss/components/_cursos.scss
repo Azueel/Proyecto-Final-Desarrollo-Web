@@ -1,0 +1,54 @@
+.cursos__banner {
+	background: url('/assets/img/quienesSomos.jpg');
+	height: 60vh;
+	background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+.cursos__container {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+
+	.cursos__font {
+		margin-bottom: 8rem;
+		background-color: white;
+		color: $primaryColor;
+		text-align: center;
+		margin-top: -8rem;
+
+		@media only screen and (min-width: 768px) {
+			width: 50vw;
+
+			@media only screen and (min-width: 1200px) {
+				width: 30vw;
+			}
+		}
+
+		.cursos__font--title {
+			font-size: 2.2rem;
+			letter-spacing: 1rem;
+			@media only screen and (min-width: 768px) {
+				font-size: 3rem;
+				letter-spacing: 1.2rem;
+
+				@media only screen and (min-width: 1200px) {
+					font-size: 4rem;
+				}
+			}
+		}
+
+		.cursos__font--parrafo {
+			font-size: 1.2rem;
+
+			@media only screen and (min-width: 768px) {
+				font-size: 1.5rem;
+				@media only screen and (min-width: 1200px) {
+					font-size: 1.7rem;
+				}
+			}
+		}
+	}
+}

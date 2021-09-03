@@ -27,9 +27,11 @@
 		<!--///////////////////Comienzo del NAV/////////////////////////////-->
 		<nav class="bgPrimary">
 			<div class="align-items-center">
-				<a href="/" class="mx-auto">
-					<img src="./assets/img/logo.png" alt="logo" class="nav__logo"
-				/></a>
+				<div class="d-flex">
+					<a href="/" class="mx-auto">
+						<img src="./assets/img/logo.png" alt="logo" class="nav__logo"
+					/></a>
+				</div>
 
 				<div class="container">
 					<ul class="justify-content-evenly text-decoration-none">
@@ -54,11 +56,21 @@
 
 		<!--///////////////////Comienzo del HEADER/////////////////////////////-->
 		<header>
-			<div class="container-fluid header__container">
+			<div class="header__img">
+				<div class="d-block">
+					<div class="d-flex justify-content-center">
+						<img src="/assets/img/logo.png" alt="logo" class="header__logo" />
+					</div>
+
+					<h1 class="text-white header__title">Academia Sinergia</h1>
+					<h4 class="text-center text-white">APRENDE CON NOSOTROS</h4>
+				</div>
+			</div>
+			<!--<div class="container-fluid header__container">
 				<div class="row justify-content-center">
 					<div class="col-10 header__borde"></div>
 				</div>
-			</div>
+			</div>-->
 		</header>
 		<!--///////////////////FIN del HEADER/////////////////////////////-->
 
@@ -91,7 +103,7 @@
 											brindarte el mejor aprendizaje
 										</p>
 										<a
-											href="#"
+											href="/views/nosotros.html"
 											class="btn btn-dark rounded text-warning fs-3 w-100"
 											>Ver Mas</a
 										>
@@ -112,7 +124,7 @@
 											nuestra academiada a traves de sus años
 										</p>
 										<a
-											href="#"
+											href="/views/nosotros.html"
 											class="btn btn-dark rounded text-warning fs-3 w-100"
 											>Ver Mas</a
 										>
@@ -129,7 +141,7 @@
 											productos que disponemos para brindarte
 										</p>
 										<a
-											href="#"
+											href="/views/productos.html"
 											class="btn btn-dark rounded text-warning fs-3 w-100"
 											>Ver Mas</a
 										>
@@ -238,7 +250,9 @@
 
 								<div class="col-lg-5 text-center">
 									<div class="border border-warning py-3 mb-5">
-										<a href="" class="text-warning text-decoration-none fs-3"
+										<a
+											href="/views/cursos.html"
+											class="text-warning text-decoration-none fs-3"
 											>Ver Curso</a
 										>
 									</div>
@@ -311,7 +325,9 @@
 
 								<div class="col-lg-5 text-center">
 									<div class="border border-warning py-3 mb-5">
-										<a href="" class="text-warning text-decoration-none fs-3"
+										<a
+											href="/views/cursos.html"
+											class="text-warning text-decoration-none fs-3"
 											>Ver Curso</a
 										>
 									</div>
@@ -384,7 +400,9 @@
 
 								<div class="col-lg-5 text-center">
 									<div class="border border-warning py-3 mb-5">
-										<a href="" class="text-warning text-decoration-none fs-3"
+										<a
+											href="/views/cursos.html"
+											class="text-warning text-decoration-none fs-3"
 											>Ver Curso</a
 										>
 									</div>
@@ -394,7 +412,9 @@
 					</div>
 				</div>
 				<div class="header__container cursos__container-button">
-					<button class="btn btn-dark cursos__button">Ver mas Cursos</button>
+					<a href="/views/cursos.html"
+						><button class="btn btn-dark cursos__button">Ver mas Cursos</button></a
+					>
 				</div>
 			</div>
 		</section>
@@ -430,30 +450,71 @@
 		</section>
 		<!--////////////////////////Fin Producto/////////////////////-->
 
-		<footer>
+		<footer class="bg-dark">
 			<div class="footer__secondary py-3">
 				<p class="footer__text"></p>
 			</div>
 
-			<div class="menu">
-				<div class="footerRedes">
-					<div class="socialNetworks d-flex justify-content-center">
+			<div class="container text-white py-5">
+				<div class="row">
+					<div class="col-lg-3">
+						<h3 class="fs-1 pt-5">CONTACTATE</h3>
+						<div class="py-4">
+							<div class="d-flex">
+								<i class="py-2 fs-1 fab fa-whatsapp text-success"></i>
+								<p class="ms-3 py-2 fs-2">+54 911 349 582</p>
+							</div>
+							<div class="d-flex">
+								<i class="fas fa-phone py-2 fs-1"></i>
+								<p class="ms-3 py-2 fs-2">+54 011 329 581</p>
+							</div>
+
+							<div class="d-flex">
+								<i class="far fa-envelope py-2 fs-1"> </i>
+								<p class="ms-3 py-2 fs-2">sinergiasr@gmail.com</p>
+							</div>
+							<div class="d-flex">
+								<i class="fas fa-map-marker-alt fs-1 py-2"> </i>
+								<p class="ms-3 py-2 fs-4">Coronel Campos 46, San Rafael, Mendoza</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<h3 class="pt-5 pb-3 fs-1">Inscripciones Abiertas</h3>
+						<a href="/views/cursos.html"
+							><button class="btn btn-warning w-50 p-3 fs-2">Inscribite</button></a
+						>
+
+						<h3 class="fs-1 pt-5 pb-4">SOCIAL</h3>
 						<a href="https://www.facebook.com/"
-							><i class="fab fa-facebook-square iconoSocial text-warning mx-5"></i
+							><i class="fab fa-facebook-f bg-white rounded-circle text-dark p-3"></i
 						></a>
-						<a href="https://twitter.com/"
-							><i class="fab fa-twitter mx-5 iconoSocial text-warning"></i
+						<a href="https://www.twitter.com/"
+							><i
+								class="fab fa-twitter bg-white rounded-circle text-dark p-3 ms-4"
+							></i
 						></a>
 						<a href="https://www.instagram.com/"
-							><i class="fab fa-instagram iconoSocial text-warning mx-5"></i
+							><i
+								class="fab fa-instagram bg-white rounded-circle text-dark p-3 ms-4"
+							></i
 						></a>
-						<a href="https://www.youtube.com/">
-							<i class="fab fa-youtube iconoSocial text-warning mx-5"></i>
-						</a>
 					</div>
-					<div class="footer__contactanos">
-						<p class="footer__contactanos--text">Contactanos</p>
-						<p class="footer__contactanos--number">011-222-333-111</p>
+					<div class="col-lg-3">
+						<h3 class="pt-5 fs-1 pb-2">ALUMNOS</h3>
+						<a href="/views/contacto.html" class="text-decoration-none"
+							><p class="fs-3 text-white opacity-50">Atencion al Alumno</p></a
+						>
+
+						<h3 class="pt-5 fs-1 pb-2">Profesionales</h3>
+						<a href="/views/contacto.html" class="text-decoration-none"
+							><p class="fs-3 text-white opacity-50">Trabaja con Nosotros</p></a
+						>
+					</div>
+					<div class="col-lg-3">
+						<h3 class="pt-5 fs-1 pb-4">TE MANTENDREMOS INFORMADO</h3>
+						<input type="text" placeholder="ingresa tu email" class="p-4 w-100 fs-3" />
+						<button class="my-4 w-50 p-4 bg-white fs-3">Suscribite</button>
 					</div>
 				</div>
 			</div>

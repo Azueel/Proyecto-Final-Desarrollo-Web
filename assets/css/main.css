@@ -13,6 +13,25 @@ h1 {
   font-size: 6rem; }
 
 /**********HEADER***********/
+.header__img {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/img/banner.jpg");
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center; }
+  .header__img .header__logo {
+    width: 40vw; }
+    @media only screen and (min-width: 1200px) {
+      .header__img .header__logo {
+        width: 22vw; } }
+  .header__img .header__title {
+    font-size: 4rem; }
+    @media only screen and (min-width: 768px) {
+      .header__img .header__title {
+        font-size: 7rem; } }
+
 .header__container {
   margin-top: 13rem; }
   .header__container .header__borde {
@@ -133,7 +152,8 @@ nav {
       nav div ul {
         flex-direction: row; } }
     nav div ul li {
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      list-style: none; }
       nav div ul li:after {
         content: '';
         display: block;
@@ -164,37 +184,8 @@ footer .footer__secondary {
     height: 8vh;
     margin-left: 50%; }
 
-footer .menu {
-  background-color: #36363d;
-  width: 100%;
-  color: #d7cc75; }
-  footer .menu .footerRedes {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-    footer .menu .footerRedes .socialNetworks {
-      display: flex;
-      justify-content: space-between;
-      width: 30rem;
-      margin-top: 3rem;
-      padding-top: 4rem; }
-      footer .menu .footerRedes .socialNetworks .iconoSocial {
-        font-size: 4rem; }
-        @media only screen and (min-width: 768px) {
-          footer .menu .footerRedes .socialNetworks .iconoSocial {
-            font-size: 5rem; } }
-        @media only screen and (min-width: 1200px) {
-          footer .menu .footerRedes .socialNetworks .iconoSocial {
-            font-size: 6rem; } }
-    footer .menu .footerRedes .footer__contactanos {
-      padding-top: 4rem;
-      padding-bottom: 9rem; }
-      footer .menu .footerRedes .footer__contactanos .footer__contactanos--text {
-        font-size: 5rem; }
-      footer .menu .footerRedes .footer__contactanos .footer__contactanos--number {
-        padding-top: 1rem;
-        font-size: 2rem; }
+footer div div div i {
+  font-size: 1.7rem; }
 
 .imgContacto {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url(../img//fondoForm.png);
@@ -257,9 +248,13 @@ footer .menu {
   .producto__precio {
     font-size: 3rem; } }
 
-.nosotros__font {
-  font-size: 6rem;
-  margin-bottom: 8rem; }
+.nosotros__banner {
+  background: url(/assets/img/nosotrosBanner.jpg);
+  height: 60vh;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; }
 
 .nosotros__name--directora {
   width: 100vw;
@@ -285,6 +280,49 @@ footer .menu {
   font-size: 7rem;
   font-weight: bold;
   padding-bottom: 3rem; }
+
+.cursos__banner {
+  background: url("/assets/img/quienesSomos.jpg");
+  height: 60vh;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; }
+
+.cursos__container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; }
+  .cursos__container .cursos__font {
+    margin-bottom: 8rem;
+    background-color: white;
+    color: #36363d;
+    text-align: center;
+    margin-top: -8rem; }
+    @media only screen and (min-width: 768px) {
+      .cursos__container .cursos__font {
+        width: 50vw; } }
+  @media only screen and (min-width: 768px) and (min-width: 1200px) {
+    .cursos__container .cursos__font {
+      width: 30vw; } }
+    .cursos__container .cursos__font .cursos__font--title {
+      font-size: 2.2rem;
+      letter-spacing: 1rem; }
+      @media only screen and (min-width: 768px) {
+        .cursos__container .cursos__font .cursos__font--title {
+          font-size: 3rem;
+          letter-spacing: 1.2rem; } }
+  @media only screen and (min-width: 768px) and (min-width: 1200px) {
+    .cursos__container .cursos__font .cursos__font--title {
+      font-size: 4rem; } }
+    .cursos__container .cursos__font .cursos__font--parrafo {
+      font-size: 1.2rem; }
+      @media only screen and (min-width: 768px) {
+        .cursos__container .cursos__font .cursos__font--parrafo {
+          font-size: 1.5rem; } }
+  @media only screen and (min-width: 768px) and (min-width: 1200px) {
+    .cursos__container .cursos__font .cursos__font--parrafo {
+      font-size: 1.7rem; } }
 
 body {
   background-color: whitesmoke; }
