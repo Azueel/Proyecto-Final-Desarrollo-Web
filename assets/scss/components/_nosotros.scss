@@ -9,9 +9,12 @@
 .nosotros__name--directora {
 	width: 100vw;
 	padding-top: 2rem;
+	font-size: 4rem;
+	color: $secundaryColor;
 
 	@media only screen and (min-width: 1200px) {
 		margin-left: 4rem;
+		font-size: 6rem;
 	}
 }
 

@@ -1,18 +1,17 @@
 footer {
 	.footer__secondary {
 		background-color: $secundaryColor;
-		height: 10vh;
-
-		.footer__text {
-			border-left: solid 3px $primaryColor;
-			height: 8vh;
-			margin-left: 50%;
-		}
 	}
 
 	div {
 		div {
 			div {
+				a {
+					color: white;
+					&:hover {
+						color: yellow;
+					}
+				}
 				i {
 					font-size: 1.7rem;
 				}

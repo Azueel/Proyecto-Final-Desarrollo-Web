@@ -177,12 +177,12 @@ nav {
     margin-top: -5rem; }
 
 footer .footer__secondary {
-  background-color: #d7cc75;
-  height: 10vh; }
-  footer .footer__secondary .footer__text {
-    border-left: solid 3px #36363d;
-    height: 8vh;
-    margin-left: 50%; }
+  background-color: #d7cc75; }
+
+footer div div div a {
+  color: white; }
+  footer div div div a:hover {
+    color: yellow; }
 
 footer div div div i {
   font-size: 1.7rem; }
@@ -258,10 +258,13 @@ footer div div div i {
 
 .nosotros__name--directora {
   width: 100vw;
-  padding-top: 2rem; }
+  padding-top: 2rem;
+  font-size: 4rem;
+  color: #d7cc75; }
   @media only screen and (min-width: 1200px) {
     .nosotros__name--directora {
-      margin-left: 4rem; } }
+      margin-left: 4rem;
+      font-size: 6rem; } }
 
 .nosotros__info {
   font-size: 1.6rem;
