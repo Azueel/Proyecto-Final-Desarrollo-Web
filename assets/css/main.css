@@ -16,7 +16,7 @@ h1 {
 /**********HEADER***********/
 .header__img {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/img/banner.jpg");
-  height: 85vh;
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -139,43 +139,14 @@ html {
   background-color: whitesmoke; }
 
 nav {
-  padding-top: 7rem;
-  padding-bottom: 1rem; }
-  nav div a {
-    display: block;
-    text-align: center; }
-  nav div ul {
-    display: flex;
-    flex-direction: column;
-    margin-right: 1rem;
-    padding-top: 1rem; }
-    @media only screen and (min-width: 768px) {
-      nav div ul {
-        flex-direction: row; } }
-    nav div ul li {
-      text-transform: uppercase;
-      list-style: none; }
-      nav div ul li:after {
-        content: '';
-        display: block;
-        margin: auto;
-        height: 3px;
-        width: 0px;
-        background: transparent;
-        transition: width 0.8s ease, background-color 0.8s ease; }
-      nav div ul li:hover:after {
-        width: 100%;
-        background: #d7cc75; }
-      nav div ul li a {
-        color: white;
-        text-decoration: none;
-        font-size: 2.2rem;
-        font-size: "Nunito", sans-serif; }
-        nav div ul li a:hover {
-          color: whitesmoke; }
+  position: fixed !important;
+  width: 100%;
+  z-index: 100; }
+  @media only screen and (min-width: 1200px) {
+    nav {
+      position: static !important; } }
   nav .nav__logo {
-    width: 10rem;
-    margin-top: -5rem; }
+    width: 10rem; }
 
 footer .footer__secondary {
   background-color: #d7cc75; }
@@ -288,8 +259,10 @@ div p a::after {
   color: white; }
 
 .bgProducto {
-  background-color: #efe8df;
-  /*****************PRODUCTO********************/ }
+  background-color: #efe8df; }
+  .bgProducto .producto__titulo {
+    font-size: 6rem;
+    font-weight: bold; }
   .bgProducto .productos__checkbox {
     display: flex;
     flex-direction: column;

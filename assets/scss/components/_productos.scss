@@ -1,7 +1,11 @@
 .bgProducto {
 	background-color: #efe8df;
 
-	/*****************PRODUCTO********************/
+	.producto__titulo {
+		font-size: 6rem;
+		font-weight: bold;
+	}
+
 	.productos__checkbox {
 		display: flex;
 		flex-direction: column;

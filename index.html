@@ -15,6 +15,7 @@
 		<meta name="author" content="alejo.com.ar" />
 		<link rel="stylesheet" href="./assets/css/bootstrap.css" />
 		<link rel="stylesheet" href="./assets/css/main.css" />
+
 		<link
 			rel="stylesheet"
 			href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
@@ -31,27 +32,60 @@
 	</head>
 	<body>
 		<!--///////////////////Comienzo del NAV/////////////////////////////-->
-		<nav class="bgPrimary">
-			<div class="align-items-center">
-				<div class="d-flex">
-					<a href="/" class="mx-auto">
-						<img src="./assets/img/logo.png" alt="logo" class="nav__logo"
-					/></a>
-				</div>
+		<nav class="navbar navbar-expand-lg navbar-light bgPrimary">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="/index.html"
+					><img
+						src="/assets/img/logo.png"
+						class="nav__logo ms-4"
+						alt="logo"
+				/></a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div
+					class="collapse navbar-collapse"
+					id="navbarSupportedContent"
+				>
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a
+								class="nav-link active fs-1 text-white ms-5"
+								aria-current="page"
+								href="/views/cursos.html"
+								>Cursos</a
+							>
+						</li>
+						<li class="nav-item">
+							<a
+								class="nav-link fs-1 text-white ms-5"
+								href="/views/productos.html"
+								>Productos</a
+							>
+						</li>
 
-				<div class="container">
-					<ul class="justify-content-evenly text-decoration-none">
-						<li>
-							<a href="/views/cursos.html">Cursos</a>
+						<li class="nav-item">
+							<a
+								class="nav-link fs-1 text-white ms-5"
+								href="/views/nosotros.html"
+								>Nosotros</a
+							>
 						</li>
-						<li>
-							<a href="./views/productos.html">Productos </a>
-						</li>
-						<li>
-							<a href="./views/nosotros.html">Nosotros</a>
-						</li>
-						<li>
-							<a href="/views/contacto.html">Contacto</a>
+
+						<li class="nav-item">
+							<a
+								class="nav-link fs-1 text-white ms-5"
+								href="/views/contacto.html"
+								>Contactanos</a
+							>
 						</li>
 					</ul>
 				</div>
@@ -68,14 +102,28 @@
 						<img
 							src="/assets/img/logo.png"
 							alt="logo"
-							class="header__logo animate__animated animate__backInRight"
+							class="
+								header__logo
+								animate__animated animate__backInRight
+							"
 						/>
 					</div>
 
-					<h1 class="text-white header__title animate__animated animate__backInLeft">
+					<h1
+						class="
+							text-white
+							header__title
+							animate__animated animate__backInLeft
+						"
+					>
 						Academia Sinergia
 					</h1>
-					<h4 class="text-center text-white animate__animated animate__backInLeft">
+					<h4
+						class="
+							text-center text-white
+							animate__animated animate__backInLeft
+						"
+					>
 						APRENDE CON NOSOTROS
 					</h4>
 				</div>
@@ -93,69 +141,129 @@
 
 		<!--///////////////////Comienzo de SECCION/////////////////////////////-->
 		<section>
-			<div class="container-fluid bgPrimary header__container section__padding">
-				<h2 class="text-white text-center nosotros__title">Conoce Sobre Nosotros</h2>
+			<div
+				class="
+					container-fluid
+					bgPrimary
+					header__container
+					section__padding
+				"
+			>
+				<h2 class="text-white text-center nosotros__title">
+					Conoce Sobre Nosotros
+				</h2>
 				<div class="row justify-content-center section__container">
 					<div class="col-lg-8">
 						<div class="row">
 							<div class="col-lg-4 py-5">
-								<div class="card bgTertiary text-white section__border p-3">
+								<div
+									class="
+										card
+										bgTertiary
+										text-white
+										section__border
+										p-3
+									"
+								>
 									<img
 										src="./assets/img/headerFondo.jpg"
 										class="img-fluid"
 										alt="imagen Nosotros"
 									/>
 									<div class="card-body colorPrimary">
-										<h5 class="card-title fw-bold">Profesores</h5>
+										<h5 class="card-title fw-bold">
+											Profesores
+										</h5>
 										<p class="card-text fs-3">
-											Conoce Acerca de nuestros Profesores Seleccionado para
-											brindarte el mejor aprendizaje
+											Conoce Acerca de nuestros Profesores
+											Seleccionado para brindarte el mejor
+											aprendizaje
 										</p>
 										<a
 											href="/views/nosotros.html"
-											class="btn btn-dark rounded text-warning fs-3 w-100"
+											class="
+												btn btn-dark
+												rounded
+												text-warning
+												fs-3
+												w-100
+											"
 											>Ver Mas</a
 										>
 									</div>
 								</div>
 							</div>
 							<div class="col-lg-4 py-5">
-								<div class="card bgTertiary text-white section__border p-3">
+								<div
+									class="
+										card
+										bgTertiary
+										text-white
+										section__border
+										p-3
+									"
+								>
 									<img
 										src="./assets/img/egresados2.png"
 										class="img-fluid"
 										alt="img Egresados"
 									/>
 									<div class="card-body colorPrimary">
-										<h5 class="card-title fw-bold">Academia</h5>
+										<h5 class="card-title fw-bold">
+											Academia
+										</h5>
 										<p class="card-text fs-3">
-											Conoce a fondo todos los detalles y la historia de
-											nuestra academiada a traves de sus años
+											Conoce a fondo todos los detalles y
+											la historia de nuestra academiada a
+											traves de sus años
 										</p>
 										<a
 											href="/views/nosotros.html"
-											class="btn btn-dark rounded text-warning fs-3 w-100"
+											class="
+												btn btn-dark
+												rounded
+												text-warning
+												fs-3
+												w-100
+											"
 											>Ver Mas</a
 										>
 									</div>
 								</div>
 							</div>
 							<div class="col-lg-4 py-5">
-								<div class="card bgTertiary text-white section__border p-3">
+								<div
+									class="
+										card
+										bgTertiary
+										text-white
+										section__border
+										p-3
+									"
+								>
 									<img
 										src="./assets/img/wahls.png"
 										class="img-fluid"
 										alt="Img distribuidora"
 									/>
 									<div class="card-body colorPrimary">
-										<h5 class="card-title fw-bold">Distribuidora</h5>
+										<h5 class="card-title fw-bold">
+											Distribuidora
+										</h5>
 										<p class="card-text fs-3">
-											Conoce Acerca de nuestra distribuidora y todo los
-											productos que disponemos para brindarte
+											Conoce Acerca de nuestra
+											distribuidora y todo los productos
+											que disponemos para brindarte
 										</p>
 										<a
 											href="/views/productos.html"
-											class="btn btn-dark rounded text-warning fs-3 w-100"
+											class="
+												btn btn-dark
+												rounded
+												text-warning
+												fs-3
+												w-100
+											"
 											>Ver Mas</a
 										>
 									</div>
@@ -171,27 +279,39 @@
 		<!--//////////////// Comienzo Cursos //////////////////////////////-->
 		<section>
 			<div class="container-fluid header__container">
-				<h2 class="text-center cursos__title">Accede a Nuestra Gran Variedad de Cursos</h2>
+				<h2 class="text-center cursos__title">
+					Accede a Nuestra Gran Variedad de Cursos
+				</h2>
 
 				<div class="row text-center py-5">
 					<div class="col-lg-4">
 						<div class="d-block justify-content-around">
-							<i class="fas fa-user-graduate cursos__icon py-5"></i>
-							<p class="cursos__title-icon">Certificado Avalado Por Coalix Pro</p>
+							<i
+								class="fas fa-user-graduate cursos__icon py-5"
+							></i>
+							<p class="cursos__title-icon">
+								Certificado Avalado Por Coalix Pro
+							</p>
 						</div>
 					</div>
 
 					<div class="col-lg-4">
 						<div class="d-block">
-							<i class="fas fa-address-card cursos__icon py-5"></i>
-							<p class="cursos__title-icon">Obtener una Matriculacion</p>
+							<i
+								class="fas fa-address-card cursos__icon py-5"
+							></i>
+							<p class="cursos__title-icon">
+								Obtener una Matriculacion
+							</p>
 						</div>
 					</div>
 
 					<div class="col-lg-4">
 						<div class="d-block">
 							<i class="fas fa-book cursos__icon py-5"></i>
-							<p class="cursos__title-icon">Programas y Tecnicas Actualizadas</p>
+							<p class="cursos__title-icon">
+								Programas y Tecnicas Actualizadas
+							</p>
 						</div>
 					</div>
 				</div>
@@ -200,52 +320,119 @@
 			<div class="container-fluid mt-5 bg-dark">
 				<div class="row d-flex justify-content-around">
 					<div class="col-lg-3 mt-5">
-						<div class="container px-5 bg-dark text-white border border-warning">
+						<div
+							class="
+								container
+								px-5
+								bg-dark
+								text-white
+								border border-warning
+							"
+						>
 							<div class="mt-3">
-								<p class="text-end p-2 text-warning fs-4">Unisex</p>
+								<p class="text-end p-2 text-warning fs-4">
+									Unisex
+								</p>
 							</div>
-							<h3 class="text-warning fs-1 mb-5">Peluqueria Unisex</h3>
+							<h3 class="text-warning fs-1 mb-5">
+								Peluqueria Unisex
+							</h3>
 							<p class="fs-4">
-								¿Qué aprenderás? El curso de estilista formó durante años a los
-								estilistas más exigentes del mercado internacional. Los dueños de
-								los salones eligen este curso para formar a sus empleados. Es un
-								curso de alto nivel, donde cualquier persona egresada puede trabajar
-								y desenvolverse en todas las áreas, además forma parte de la carrera
-								internacional que es la más importante del mundo de la belleza.
+								¿Qué aprenderás? El curso de estilista formó
+								durante años a los estilistas más exigentes del
+								mercado internacional. Los dueños de los salones
+								eligen este curso para formar a sus empleados.
+								Es un curso de alto nivel, donde cualquier
+								persona egresada puede trabajar y desenvolverse
+								en todas las áreas, además forma parte de la
+								carrera internacional que es la más importante
+								del mundo de la belleza.
 							</p>
 							<div class="d-inline-flex mt-5">
-								<i class="far fa-calendar-alt text-warning fs-1"></i>
+								<i
+									class="
+										far
+										fa-calendar-alt
+										text-warning
+										fs-1
+									"
+								></i>
 								<p class="ms-3 fs-4">40 semanas</p>
-								<i class="far fa-clock text-warning fs-1 ms-5 mt-1"></i>
+								<i
+									class="
+										far
+										fa-clock
+										text-warning
+										fs-1
+										ms-5
+										mt-1
+									"
+								></i>
 								<p class="ms-2 mt-1 fs-4">1 clase por semana</p>
 							</div>
 
 							<div class="row">
 								<div class="col-lg-12 mt-5">
-									<p class="text-warning fs-2">Aprenderas en Este Curso</p>
+									<p class="text-warning fs-2">
+										Aprenderas en Este Curso
+									</p>
 								</div>
 								<div class="col-lg-6 d-inline-flex mt-2">
-									<i class="fas fa-check text-warning mt-3 fs-5"></i>
+									<i
+										class="
+											fas
+											fa-check
+											text-warning
+											mt-3
+											fs-5
+										"
+									></i>
 									<p class="ms-4 mt-2 fs-4">Colorimetria</p>
 								</div>
 
 								<div class="col-lg-6 d-inline-flex">
-									<i class="fas fa-check text-warning mt-4 fs-5"></i>
+									<i
+										class="
+											fas
+											fa-check
+											text-warning
+											mt-4
+											fs-5
+										"
+									></i>
 									<p class="ms-4 mt-3 fs-4">Cortes</p>
 								</div>
 								<div class="col-lg-6 d-inline-flex">
-									<i class="fas fa-check text-warning mt-3 fs-5"></i>
+									<i
+										class="
+											fas
+											fa-check
+											text-warning
+											mt-3
+											fs-5
+										"
+									></i>
 									<p class="ms-3 mt-1 fs-4">Peinados</p>
 								</div>
 								<div class="col-lg-6 d-inline-flex">
-									<i class="fas fa-check text-warning mt-4 fs-5"></i>
+									<i
+										class="
+											fas
+											fa-check
+											text-warning
+											mt-4
+											fs-5
+										"
+									></i>
 									<p class="ms-4 mt-3 fs-4">Tratamientos</p>
 								</div>
 							</div>
 
 							<div class="row">
 								<div class="col-lg-12 mt-5 d-inline-flex">
-									<p class="fs-2 fw-bolder">Certificado Por:</p>
+									<p class="fs-2 fw-bolder">
+										Certificado Por:
+									</p>
 									<img
 										src="./assets/img/logo-coalix.png"
 										class="cursos__coalix"
@@ -262,10 +449,16 @@
 								</div>
 
 								<div class="col-lg-5 text-center">
-									<div class="border border-warning py-3 mb-5">
+									<div
+										class="border border-warning py-3 mb-5"
+									>
 										<a
 											href="/views/cursos.html"
-											class="text-warning text-decoration-none fs-3"
+											class="
+												text-warning
+												text-decoration-none
+												fs-3
+											"
 											>Ver Curso</a
 										>
 									</div>
@@ -275,52 +468,119 @@
 					</div>
 
 					<div class="col-lg-3 mt-5">
-						<div class="container px-5 bg-dark text-white border border-warning">
+						<div
+							class="
+								container
+								px-5
+								bg-dark
+								text-white
+								border border-warning
+							"
+						>
 							<div class="mt-3">
-								<p class="text-end p-2 text-warning fs-4">Barberia</p>
+								<p class="text-end p-2 text-warning fs-4">
+									Barberia
+								</p>
 							</div>
-							<h3 class="text-warning fs-1 mb-5">Barberia Inicial</h3>
+							<h3 class="text-warning fs-1 mb-5">
+								Barberia Inicial
+							</h3>
 							<p class="fs-4">
-								¿Qué aprenderás? El curso de Barberia formó durante años a los
-								Barberos más exigentes del mercado internacional. Los dueños de los
-								salones eligen este curso para formar a sus empleados. Es un curso
-								de alto nivel, donde cualquier persona egresada puede trabajar y
-								desenvolverse en todas las áreas, además forma parte de la carrera
-								internacional que es la más importante del mundo de la belleza.
+								¿Qué aprenderás? El curso de Barberia formó
+								durante años a los Barberos más exigentes del
+								mercado internacional. Los dueños de los salones
+								eligen este curso para formar a sus empleados.
+								Es un curso de alto nivel, donde cualquier
+								persona egresada puede trabajar y desenvolverse
+								en todas las áreas, además forma parte de la
+								carrera internacional que es la más importante
+								del mundo de la belleza.
 							</p>
 							<div class="d-inline-flex mt-5">
-								<i class="far fa-calendar-alt text-warning fs-1"></i>
+								<i
+									class="
+										far
+										fa-calendar-alt
+										text-warning
+										fs-1
+									"
+								></i>
 								<p class="ms-3 fs-4">16 semanas</p>
-								<i class="far fa-clock text-warning fs-1 ms-5 mt-1"></i>
+								<i
+									class="
+										far
+										fa-clock
+										text-warning
+										fs-1
+										ms-5
+										mt-1
+									"
+								></i>
 								<p class="ms-2 mt-1 fs-4">1 clase por semana</p>
 							</div>
 
 							<div class="row">
 								<div class="col-lg-12 mt-5">
-									<p class="text-warning fs-2">Aprenderas en Este Curso</p>
+									<p class="text-warning fs-2">
+										Aprenderas en Este Curso
+									</p>
 								</div>
 								<div class="col-lg-6 d-inline-flex mt-2">
-									<i class="fas fa-check text-warning mt-3 fs-5"></i>
+									<i
+										class="
+											fas
+											fa-check
+											text-warning
+											mt-3
+											fs-5
+										"
+									></i>
 									<p class="ms-4 mt-2 fs-4">Degrade</p>
 								</div>
 
 								<div class="col-lg-6 d-inline-flex">
-									<i class="fas fa-check text-warning mt-4 fs-5"></i>
+									<i
+										class="
+											fas
+											fa-check
+											text-warning
+											mt-4
+											fs-5
+										"
+									></i>
 									<p class="ms-4 mt-3 fs-4">Cortes</p>
 								</div>
 								<div class="col-lg-6 d-inline-flex">
-									<i class="fas fa-check text-warning mt-3 fs-5"></i>
+									<i
+										class="
+											fas
+											fa-check
+											text-warning
+											mt-3
+											fs-5
+										"
+									></i>
 									<p class="ms-3 mt-1 fs-4">Mulet</p>
 								</div>
 								<div class="col-lg-6 d-inline-flex">
-									<i class="fas fa-check text-warning mt-4 fs-5"></i>
+									<i
+										class="
+											fas
+											fa-check
+											text-warning
+											mt-4
+											fs-5
+										"
+									></i>
 									<p class="ms-4 mt-3 fs-4">Cubata</p>
 								</div>
 							</div>
 
 							<div class="row">
 								<div class="col-lg-12 mt-5 d-inline-flex">
-									<p class="fs-2 fw-bolder">Certificado Por:</p>
+									<p class="fs-2 fw-bolder">
+										Certificado Por:
+									</p>
 									<img
 										src="./assets/img/logo-coalix.png"
 										class="cursos__coalix"
@@ -337,10 +597,16 @@
 								</div>
 
 								<div class="col-lg-5 text-center">
-									<div class="border border-warning py-3 mb-5">
+									<div
+										class="border border-warning py-3 mb-5"
+									>
 										<a
 											href="/views/cursos.html"
-											class="text-warning text-decoration-none fs-3"
+											class="
+												text-warning
+												text-decoration-none
+												fs-3
+											"
 											>Ver Curso</a
 										>
 									</div>
@@ -350,52 +616,123 @@
 					</div>
 
 					<div class="col-lg-3 mt-5">
-						<div class="container px-5 bg-dark text-white border border-warning">
+						<div
+							class="
+								container
+								px-5
+								bg-dark
+								text-white
+								border border-warning
+							"
+						>
 							<div class="mt-3">
-								<p class="text-end p-2 text-warning fs-4">Unisex</p>
+								<p class="text-end p-2 text-warning fs-4">
+									Unisex
+								</p>
 							</div>
-							<h3 class="text-warning fs-1 mb-5">Superior Unisex</h3>
+							<h3 class="text-warning fs-1 mb-5">
+								Superior Unisex
+							</h3>
 							<p class="fs-4">
-								¿Qué aprenderás? El curso de estilista formó durante años a los
-								estilistas más exigentes del mercado internacional. Los dueños de
-								los salones eligen este curso para formar a sus empleados. Es un
-								curso de alto nivel, donde cualquier persona egresada puede trabajar
-								y desenvolverse en todas las áreas, además forma parte de la carrera
-								internacional que es la más importante del mundo de la belleza.
+								¿Qué aprenderás? El curso de estilista formó
+								durante años a los estilistas más exigentes del
+								mercado internacional. Los dueños de los salones
+								eligen este curso para formar a sus empleados.
+								Es un curso de alto nivel, donde cualquier
+								persona egresada puede trabajar y desenvolverse
+								en todas las áreas, además forma parte de la
+								carrera internacional que es la más importante
+								del mundo de la belleza.
 							</p>
 							<div class="d-inline-flex mt-5">
-								<i class="far fa-calendar-alt text-warning fs-1"></i>
+								<i
+									class="
+										far
+										fa-calendar-alt
+										text-warning
+										fs-1
+									"
+								></i>
 								<p class="ms-3 fs-4">12 semanas</p>
-								<i class="far fa-clock text-warning fs-1 ms-5 mt-1"></i>
+								<i
+									class="
+										far
+										fa-clock
+										text-warning
+										fs-1
+										ms-5
+										mt-1
+									"
+								></i>
 								<p class="ms-2 mt-1 fs-4">1 clase por semana</p>
 							</div>
 
 							<div class="row">
 								<div class="col-lg-12 mt-5">
-									<p class="text-warning fs-2">Aprenderas en Este Curso</p>
+									<p class="text-warning fs-2">
+										Aprenderas en Este Curso
+									</p>
 								</div>
 								<div class="col-lg-6 d-inline-flex mt-2">
-									<i class="fas fa-check text-warning mt-3 fs-5"></i>
-									<p class="ms-4 mt-2 fs-4">Decoloracion Global</p>
+									<i
+										class="
+											fas
+											fa-check
+											text-warning
+											mt-3
+											fs-5
+										"
+									></i>
+									<p class="ms-4 mt-2 fs-4">
+										Decoloracion Global
+									</p>
 								</div>
 
 								<div class="col-lg-6 d-inline-flex">
-									<i class="fas fa-check text-warning mt-4 fs-5"></i>
-									<p class="ms-4 mt-3 fs-4">Tecnicas avanzadas</p>
+									<i
+										class="
+											fas
+											fa-check
+											text-warning
+											mt-4
+											fs-5
+										"
+									></i>
+									<p class="ms-4 mt-3 fs-4">
+										Tecnicas avanzadas
+									</p>
 								</div>
 								<div class="col-lg-6 d-inline-flex">
-									<i class="fas fa-check text-warning mt-3 fs-5"></i>
+									<i
+										class="
+											fas
+											fa-check
+											text-warning
+											mt-3
+											fs-5
+										"
+									></i>
 									<p class="ms-3 mt-1 fs-4">reflejos</p>
 								</div>
 								<div class="col-lg-6 d-inline-flex">
-									<i class="fas fa-check text-warning mt-4 fs-5"></i>
+									<i
+										class="
+											fas
+											fa-check
+											text-warning
+											mt-4
+											fs-5
+										"
+									></i>
 									<p class="ms-4 mt-3 fs-4">fantasias</p>
 								</div>
 							</div>
 
 							<div class="row">
 								<div class="col-lg-12 mt-5 d-inline-flex">
-									<p class="fs-2 fw-bolder">Certificado Por:</p>
+									<p class="fs-2 fw-bolder">
+										Certificado Por:
+									</p>
 									<img
 										src="./assets/img/logo-coalix.png"
 										class="cursos__coalix"
@@ -412,10 +749,16 @@
 								</div>
 
 								<div class="col-lg-5 text-center">
-									<div class="border border-warning py-3 mb-5">
+									<div
+										class="border border-warning py-3 mb-5"
+									>
 										<a
 											href="/views/cursos.html"
-											class="text-warning text-decoration-none fs-3"
+											class="
+												text-warning
+												text-decoration-none
+												fs-3
+											"
 											>Ver Curso</a
 										>
 									</div>
@@ -426,7 +769,9 @@
 				</div>
 				<div class="header__container cursos__container-button">
 					<a href="/views/cursos.html"
-						><button class="btn btn-dark cursos__button">Ver mas Cursos</button></a
+						><button class="btn btn-dark cursos__button">
+							Ver mas Cursos
+						</button></a
 					>
 				</div>
 			</div>
@@ -439,7 +784,8 @@
 				<div class="d-block">
 					<div class="text-center pb-5">
 						<h2 class="producto__title p-4">
-							Tenemos una Gran variedad de productos para todas tus necesidades
+							Tenemos una Gran variedad de productos para todas
+							tus necesidades
 						</h2>
 					</div>
 					<div class="text-center pt-5">
@@ -467,19 +813,37 @@
 			<div class="footer__secondary py-3 container-fluid">
 				<div class="row d-flex text-center fs-1">
 					<div class="col-lg-3">
-						<a href="/index.html" class="text-decoration-none">Home</a>
+						<a href="/index.html" class="text-decoration-none"
+							>Home</a
+						>
 					</div>
 					<div class="col-lg-2">
-						<a href="/views/cursos.html" class="text-decoration-none">Cursos</a>
+						<a
+							href="/views/cursos.html"
+							class="text-decoration-none"
+							>Cursos</a
+						>
 					</div>
 					<div class="col-lg-2">
-						<a href="/views/productos.html" class="text-decoration-none">Productos</a>
+						<a
+							href="/views/productos.html"
+							class="text-decoration-none"
+							>Productos</a
+						>
 					</div>
 					<div class="col-lg-2">
-						<a href="/views/nosotros.html" class="text-decoration-none">Nosotros</a>
+						<a
+							href="/views/nosotros.html"
+							class="text-decoration-none"
+							>Nosotros</a
+						>
 					</div>
 					<div class="col-lg-2">
-						<a href="/views/contacto.html" class="text-decoration-none">Contacto</a>
+						<a
+							href="/views/contacto.html"
+							class="text-decoration-none"
+							>Contacto</a
+						>
 					</div>
 				</div>
 			</div>
@@ -490,7 +854,15 @@
 						<h3 class="fs-1 pt-5">CONTACTATE</h3>
 						<div class="py-4">
 							<div class="d-flex">
-								<i class="py-2 fs-1 fab fa-whatsapp text-success"></i>
+								<i
+									class="
+										py-2
+										fs-1
+										fab
+										fa-whatsapp
+										text-success
+									"
+								></i>
 								<p class="ms-3 py-2 fs-2">+54 911 349 582</p>
 							</div>
 							<div class="d-flex">
@@ -500,53 +872,105 @@
 
 							<div class="d-flex">
 								<i class="far fa-envelope py-2 fs-1"> </i>
-								<p class="ms-3 py-2 fs-2">sinergiasr@gmail.com</p>
+								<p class="ms-3 py-2 fs-2">
+									sinergiasr@gmail.com
+								</p>
 							</div>
 							<div class="d-flex">
 								<i class="fas fa-map-marker-alt fs-1 py-2"> </i>
-								<p class="ms-3 py-2 fs-4">Coronel Campos 46, San Rafael, Mendoza</p>
+								<p class="ms-3 py-2 fs-4">
+									Coronel Campos 46, San Rafael, Mendoza
+								</p>
 							</div>
 						</div>
 					</div>
 					<div class="col-lg-3">
 						<h3 class="pt-5 pb-3 fs-1">Inscripciones Abiertas</h3>
 						<a href="/views/cursos.html"
-							><button class="btn btn-warning w-50 p-3 fs-2">Inscribite</button></a
+							><button class="btn btn-warning w-50 p-3 fs-2">
+								Inscribite
+							</button></a
 						>
 
 						<h3 class="fs-1 pt-5 pb-4">SOCIAL</h3>
 						<a href="https://www.facebook.com/"
-							><i class="fab fa-facebook-f bg-white rounded-circle text-dark p-3"></i
+							><i
+								class="
+									fab
+									fa-facebook-f
+									bg-white
+									rounded-circle
+									text-dark
+									p-3
+								"
+							></i
 						></a>
 						<a href="https://www.twitter.com/"
 							><i
-								class="fab fa-twitter bg-white rounded-circle text-dark p-3 ms-4"
+								class="
+									fab
+									fa-twitter
+									bg-white
+									rounded-circle
+									text-dark
+									p-3
+									ms-4
+								"
 							></i
 						></a>
 						<a href="https://www.instagram.com/"
 							><i
-								class="fab fa-instagram bg-white rounded-circle text-dark p-3 ms-4"
+								class="
+									fab
+									fa-instagram
+									bg-white
+									rounded-circle
+									text-dark
+									p-3
+									ms-4
+								"
 							></i
 						></a>
 					</div>
 					<div class="col-lg-3">
 						<h3 class="pt-5 fs-1 pb-2">ALUMNOS</h3>
-						<a href="/views/contacto.html" class="text-decoration-none"
-							><p class="fs-3 text-white opacity-50">Atencion al Alumno</p></a
+						<a
+							href="/views/contacto.html"
+							class="text-decoration-none"
+							><p class="fs-3 text-white opacity-50">
+								Atencion al Alumno
+							</p></a
 						>
 
 						<h3 class="pt-5 fs-1 pb-2">Profesionales</h3>
-						<a href="/views/contacto.html" class="text-decoration-none"
-							><p class="fs-3 text-white opacity-50">Trabaja con Nosotros</p></a
+						<a
+							href="/views/contacto.html"
+							class="text-decoration-none"
+							><p class="fs-3 text-white opacity-50">
+								Trabaja con Nosotros
+							</p></a
 						>
 					</div>
 					<div class="col-lg-3">
-						<h3 class="pt-5 fs-1 pb-4">TE MANTENDREMOS INFORMADO</h3>
-						<input type="text" placeholder="ingresa tu email" class="p-4 w-100 fs-3" />
-						<button class="my-4 w-50 p-4 bg-white fs-3">Suscribite</button>
+						<h3 class="pt-5 fs-1 pb-4">
+							TE MANTENDREMOS INFORMADO
+						</h3>
+						<input
+							type="text"
+							placeholder="ingresa tu email"
+							class="p-4 w-100 fs-3"
+						/>
+						<button class="my-4 w-50 p-4 bg-white fs-3">
+							Suscribite
+						</button>
 					</div>
 				</div>
 			</div>
 		</footer>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+			crossorigin="anonymous"
+		></script>
 	</body>
 </html>
