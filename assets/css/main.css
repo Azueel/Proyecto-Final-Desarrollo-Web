@@ -146,7 +146,7 @@ nav {
     nav {
       position: static !important; } }
   nav .nav__logo {
-    width: 10rem; }
+    width: 7rem; }
 
 footer .footer__secondary {
   background-color: #d7cc75; }
@@ -262,7 +262,11 @@ div p a::after {
   background-color: #efe8df; }
   .bgProducto .producto__titulo {
     font-size: 6rem;
-    font-weight: bold; }
+    font-weight: bold;
+    padding-top: 10rem; }
+    @media only screen and (min-width: 1200px) {
+      .bgProducto .producto__titulo {
+        padding-top: 3rem; } }
   .bgProducto .productos__checkbox {
     display: flex;
     flex-direction: column;

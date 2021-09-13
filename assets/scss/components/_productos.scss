@@ -4,6 +4,11 @@
 	.producto__titulo {
 		font-size: 6rem;
 		font-weight: bold;
+		padding-top: 10rem;
+
+		@media only screen and (min-width: 1200px) {
+			padding-top: 3rem;
+		}
 	}
 
 	.productos__checkbox {
